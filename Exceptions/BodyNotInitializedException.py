@@ -1,0 +1,2 @@
+class BodyNotInitializedException(Exception):
+    pass
