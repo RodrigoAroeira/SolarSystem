@@ -17,9 +17,9 @@ class Vector:
     def create(self):
         self.obj = arrow(pos = self.pos, axis = self.axis, color = self.color)
     
-    def update(self, axis: vector):
+    def update(self, pos: vector, axis: vector):
         self.obj.axis = axis
-        self.obj.pos = self.pos
+        self.obj.pos = pos
     
     def delete(self):
         if not self._init:
