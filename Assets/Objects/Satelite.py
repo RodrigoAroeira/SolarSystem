@@ -1,4 +1,4 @@
-from Objects import Body, Planet
+from Assets import Body, Planet
 from dataclasses import dataclass, field
 from vpython import color
 

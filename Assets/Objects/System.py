@@ -1,7 +1,6 @@
-from Objects import Body, CenterMass, Vector
+from Assets import Body, CenterMass, Vector, SystemNotInitializedException
 from dataclasses import dataclass
 from vpython import vector
-from ..Exceptions import SystemNotInitializedException
 
 
 G = 6.67408e-11

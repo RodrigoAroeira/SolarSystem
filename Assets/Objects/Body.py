@@ -1,8 +1,7 @@
 from dataclasses import dataclass
 from typing import Any
 
-from Objects import Vector
-from ..Exceptions import *
+from Assets import Vector, BodyNotInitializedException
 from vpython import vector, sphere
 
 @dataclass

@@ -6,6 +6,9 @@ from Objects.Star import Star
 from Objects.System import System
 from Objects.Vector import Vector
 
+from Exceptions.BodyNotInitializedException import BodyNotInitializedException
+from Exceptions.SystemNotInitializedException import SystemNotInitializedException
+
 
 __all__ = [
     "Body",

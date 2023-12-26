@@ -1,6 +1,6 @@
 from vpython import vector, sphere, textures
 from dataclasses import dataclass
-from Objects import Body
+from Assets import Body
 
 @dataclass
 class Planet(Body):

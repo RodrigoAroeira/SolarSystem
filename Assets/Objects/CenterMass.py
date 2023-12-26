@@ -1,5 +1,5 @@
 from vpython import color, vector
-from Objects import Body
+from Assets import Body
 
 class CenterMass(Body):
     """ CenterMass class """

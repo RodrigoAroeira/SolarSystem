@@ -1,4 +1,4 @@
-from ..Exceptions import BodyNotInitializedException
+from Assets import BodyNotInitializedException
 from dataclasses import dataclass
 from vpython import arrow, vector
 
