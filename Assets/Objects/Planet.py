@@ -1,11 +1,12 @@
 from vpython import vector, sphere, textures
 from dataclasses import dataclass
-from Assets import Body
+from .Body import Body
 
 @dataclass
 class Planet(Body):
 
     pos: vector
+    vel: vector
     texture: str = textures.earth
 
     def __post_init__(self):

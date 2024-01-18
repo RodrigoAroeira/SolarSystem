@@ -1,4 +1,4 @@
-from Assets import Body, CenterMass, Vector, SystemNotInitializedException
+from Assets import Body, CenterMass, Arrow, SystemNotInitializedException
 from dataclasses import dataclass
 from vpython import vector
 
@@ -37,8 +37,8 @@ class System:
         self.arrows = []
         nullVec = vector(0, 0, 0)
         for body in self.bodies:
-            arrowFg = Vector(body.pos, nullVec, vector(1,0,0))
-            arrowP = Vector(body.pos, nullVec, vector(0,1,0))
+            arrowFg = Arrow(body.pos, nullVec, vector(1,0,0))
+            arrowP = Arrow(body.pos, nullVec, vector(0,1,0))
 
             self.arrows.extend([arrowFg, arrowP])
 

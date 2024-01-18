@@ -4,7 +4,7 @@ from vpython import arrow, vector
 
 
 @dataclass
-class Vector:
+class Arrow:
 
     """ Arrow class """
 

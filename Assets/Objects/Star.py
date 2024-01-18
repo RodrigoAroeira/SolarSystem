@@ -1,4 +1,4 @@
-from vpython import vector, sphere
+from vpython import vector, color
 from dataclasses import dataclass
 from Assets import Body
 
@@ -10,7 +10,7 @@ class Star(Body):
 
     pos: vector
     vel: vector
-    color: vector
+    color: vector = color.yellow
 
     def create(self):
         return super().create(color = self.color,

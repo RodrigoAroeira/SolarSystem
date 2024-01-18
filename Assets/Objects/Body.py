@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 from typing import Any
 
-from Assets import Vector, BodyNotInitializedException
+from Assets import Arrow, BodyNotInitializedException
 from vpython import vector, sphere
 
 @dataclass
@@ -15,8 +15,8 @@ class Body:
     _init = False
 
     def __post_init__(self):
-        self.arrowFg: Vector
-        self.arrowP: Vector
+        self.arrowFg: Arrow
+        self.arrowP: Arrow
         
         self._startVel = vector(0, 0, 0)
         self._startPos = vector(0, 0, 0)
